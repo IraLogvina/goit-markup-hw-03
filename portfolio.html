@@ -6,21 +6,21 @@
     <title>goit-markup-hw-02</title>
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <!-- Nav conteiner -->
-        <nav class="nav-list">
+    <header class="header">
+        <div class="conteiner">
+        <!--Nav conteiner-->
+        <nav class="nav">
             <a class="logo" href="./index.html"> Web<span class="logo-studio">Studio</span></a>
-            <ul>
-                <li><a href="./index.html" class="nav-list-link" >Студия</a></li>
-                <li><a href="./portfolio.html" class="nav-list-link current">Портфолио</a></li>
-                <li><a href="#" class="nav-list-link">Контакты</a></li>
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="./index.html" class="nav-list-link">Студия</a></li>
+                <li class="nav-list-item"><a href="./portfolio.html" class="nav-list-link current">Портфолио</a></li>
+                <li class="nav-list-item"><a href="#" class="nav-list-link">Контакты</a></li>
             </ul>
-        </nav>
         <!-- Contacts conteiner-->
-        <div>
             <ul class="contacts-list">
                 <li>
                     <a class="contacts-list-link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
@@ -29,90 +29,111 @@
                     <a class="contacts-list-link" href="tel:+380961111111"> +38 096 111 11 11 </a>
                 </li>
             </ul>
+        </nav>
         </div>
-    </header>
+    </header>  
     <main>
     <!-- Service conteiner-->
-    <section>
+    <section class="our-works">
+        <div class="conteiner">
         <ul class="worktype-filters">
-            <li>
+            <li class="worktype-filters-item">
                 <button class="filter-button current" type="button">Все</button>
             </li>
-            <li>
+            <li class="worktype-filters-item">
                 <button class="filter-button" type="button">Веб-сайты</button>
             </li>
-            <li>
+            <li class="worktype-filters-item">
                 <button class="filter-button" type="button">Приложения</button>
             </li>
-            <li>
+            <li class="worktype-filters-item">
                 <button class="filter-button" type="button">Дизайн</button>
             </li>
-            <li>
+            <li class="worktype-filters-item">
                 <button class="filter-button" type="button">Маркетинг</button>
             </li>
         </ul>
     <!-- Work examples -->
         <ul class="work-examples">
-            <li>
+            <li class="work-examples-item">
+            <a href="">
                 <img src="./images-portfolio/img_p1.png" alt="Открытый ноутбук">
                 <h3>Технокряк</h3>
                 <p>Веб-сайт</p>
+            </a>
             </li>
-            <li>
+            <li class="work-examples-item">
+            <a href="">
                 <img src="./images-portfolio/img_p2.png" alt="Постер баскетбол">
-                <h3>Постер New Orlean vs Golden Star Typography</h3>
+                <h3>Постер New Orlean vs Golden Star</h3>
                 <p>Дизайн</p>
+            </a>
             </li>
-            <li>
+            <li class="work-examples-item">
+            <a href="">
                 <img src="./images-portfolio/img_p3.png" alt="Логотип ресторана">
                 <h3>Ресторан Seafood</h3>
                 <p>Приложение</p>
+            </a>
             </li>
-            <li>
+            <li class="work-examples-item">
+            <a href="">
                 <img src="./images-portfolio/img_p4.png" alt="Наушники">
                 <h3>Проект Prime</h3>
                 <p>Маркетинг</p>
+            </a>
             </li>
-            <li>
+            <li class="work-examples-item">
+            <a href="">
                 <img src="./images-portfolio/img_p5.png" alt="Коробки">
                 <h3>Проект Boxes</h3>
                 <p>Приложение</p>
+            </a>
             </li>
-            <li>
+            <li class="work-examples-item">
+            <a href="">
                 <img src="./images-portfolio/img_p6.png" alt="Монитор">
                 <h3>Inspiration has no Borders</h3>
                 <p>Веб-сайт</p>
+            </a>
             </li>
-            <li>
+            <li class="work-examples-item">
+            <a href="">
                 <img src="./images-portfolio/img_p7.png" alt="Книга открытая">
                 <h3>Издание Limited Edition</h3>
                 <p>Дизайн</p>
+            </a>
             </li>
-            <li>
+            <li class="work-examples-item">
+            <a href="">    
                 <img src="./images-portfolio/img_p8.png" alt="Ярлык">
                 <h3>Проект LAB</h3>
                 <p>Маркетинг</p>
+            </a>
             </li>
-            <li>
+            <li class="work-examples-item">
+            <a href="">
                 <img src="./images-portfolio/img_p9.png" alt="Работа на ноутбуке">
                 <h3>Growing Business</h3>
                 <p>Приложение</p>
+            </a>
             </li>
         </ul>
+        </div>
     </section>
     </main>
-    <footer>
+    <footer class="footer-list">
         <!-- Contacts-->
-        <div class="footer-list">
+        <div class="conteiner">
             <a class="logo" href="index.html">Web<span class="logo-studio-footer">Studio</span></a>
             <ul>
-                <li>
-                    <p class="address">г.Киев, пр-т Леси Украинки, 26</p>
+                <li class="contacts-item">
+                    <p class="address">г.Киев, пр-т Леси Украинки, 26</p> 
                 </li>
-                <li>
+                <li class="contacts-item">
                     <a class="contacts" href="mailto:info@example.com">info@example.com</a>
                 </li>
-                <li>
+                <li class="contacts-item">
                     <a class="contacts" href="tel:+380991111111">+38 099 111 11 11</a>
                 </li>
             </ul>
