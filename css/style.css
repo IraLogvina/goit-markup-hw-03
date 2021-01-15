@@ -335,8 +335,11 @@ color: var(--accent-color);
     margin-bottom: 9px;
 }
 
+.footer-list .logo{
+    display: block;
+    margin-bottom: 20px;
+}
 .address{
-    margin-top: 20px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
