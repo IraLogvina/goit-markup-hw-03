@@ -31,8 +31,17 @@ a{
     color: var(--primary-text-color)
 }
 
-.header-list{
+.header{
     border: 1px solid #ECECEC;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* Выравние элементов шапки в одну линию */
+
+.header-items{
+    display: flex;
+    align-items: center;
 }
 
 .conteiner{
@@ -42,6 +51,14 @@ a{
     padding-right: 15px;
     padding-left: 15px;
 }
+
+/* Navigation */
+
+.nav-info{
+    display: flex;
+    align-items: center;
+}
+
 /* Logo WebStudio */
 
 .logo{
@@ -70,19 +87,9 @@ a{
     color: var(--accent-color);
 }
 
-/* Navigation */
-
-.nav-conteiner{
-    display: flex;
-    align-items: center;
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
-
 .nav-list{
     display: flex;
-    align-items: center;
-    margin-left: 93px;
+    margin: 0 0 0 93px;
 }
 
 .nav-list-item{
@@ -112,8 +119,8 @@ color: var(--accent-color);
 /* Contacts */
 
 .contacts-list{
-    margin-left: auto;
     display: flex;
+    margin: 0 0 0 auto;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -135,15 +142,11 @@ color: var(--accent-color);
     text-decoration: none; 
 }
 
-.contacts-list-link:hover,
-.contacts-list-link:active,
-.contacts-list-link:focus {
+.contacts-list-link:hover, .contacts-list-link:active, .contacts-list-link:focus {
     color: var(--accent-color);
 }
 
-.nav-list-link:hover,
-.nav-list-link:active,
-.nav-list-link:focus {
+.nav-list-link:hover, .nav-list-link:active, .nav-list-link:focus {
     color: var(--accent-color);
 }
 
@@ -183,6 +186,19 @@ color: var(--accent-color);
 }
 
 /* Our features */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .features-section{
     display: flex;
@@ -275,7 +291,7 @@ color: var(--accent-color);
 .our-team-item{
     background-color: var(--white-text-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 /* Our team members */
@@ -310,14 +326,13 @@ border-radius: 0px 0px 4px 4px;
 .footer-list{
     padding-top: 60px;
     padding-bottom: 60px;
-    height: 252px;
     left: 0px;
     top: 2097px;
     background: #2F303A;
 }
 
-.contacts-item{
-    margin-top: 9px;
+.contacts-item {
+    margin-bottom: 9px;
 }
 
 .address{
@@ -388,7 +403,7 @@ border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.work-examples h3 {
+.work-examples h2 {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.06em;
